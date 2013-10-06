@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:v="urn:import:accelerator.client.view.desktop"
+	xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style>
+		.sidebarMargin {
+			margin: 0 0 0 1px;
+		}
+		
+		.contentMargin {
+			margin: 0px;
+		}
+	</ui:style>
+	<g:DockLayoutPanel>
+		<g:north size="25">
+			<v:TitleView ui:field="titleView" styleName="{style.sidebarMargin}">
+			</v:TitleView>
+		</g:north>
+		<g:center>
+			<g:DockLayoutPanel>
+				<g:west size="220">
+					<v:DesktopMainMenuView ui:field="mainMenuView"></v:DesktopMainMenuView>
+				</g:west>
+				<g:center>
+					<g:DeckLayoutPanel ui:field="deckLayoutPanel">
+					</g:DeckLayoutPanel>
+				</g:center>
+			</g:DockLayoutPanel>
+		</g:center>
+	</g:DockLayoutPanel>
+</ui:UiBinder> 

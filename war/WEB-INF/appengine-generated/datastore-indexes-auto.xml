@@ -1,0 +1,25 @@
+<!-- Indices written at Thu, 4 Aug 2011 01:34:06 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Project" ancestor="false" source="auto">
+        <property name="user" direction="asc"/>
+        <property name="name" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 4 times in query history -->
+    <datastore-index kind="Task" ancestor="false" source="auto">
+        <property name="project" direction="asc"/>
+        <property name="user" direction="asc"/>
+        <property name="dueDate" direction="asc"/>
+        <property name="createdDate" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Tag" ancestor="false" source="auto">
+        <property name="user" direction="asc"/>
+        <property name="name" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>

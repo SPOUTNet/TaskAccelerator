@@ -1,0 +1,19 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:v="urn:import:accelerator.client.view.desktop">
+	<ui:style>
+		.frameMargin {
+			margin: 1px;
+		}
+		
+		.headerMargin {
+			margin: 1px;
+		}
+	</ui:style>
+	<g:DockLayoutPanel>
+		<g:north size="28" styleName="{style.frameMargin}">
+			<v:TitleView ui:field="titleView" styleName="{style.headerMargin">
+			</v:TitleView>
+		</g:north>
+	</g:DockLayoutPanel>
+</ui:UiBinder> 

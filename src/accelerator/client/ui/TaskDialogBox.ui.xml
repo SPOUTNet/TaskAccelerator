@@ -1,0 +1,51 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:d="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+		.error {
+			font-weight: bold;
+			color: #FF0000;
+		}
+	</ui:style>
+	<g:VerticalPanel ui:field="rootVerticalPanel">
+		<g:cell>
+			<g:Label>タスク：</g:Label>
+		</g:cell>
+		<g:cell>
+			<g:TextBox ui:field="nameTextBox"></g:TextBox>
+		</g:cell>
+		<g:cell>
+			<g:Label ui:field="nameErrorLabel" styleName="{style.error}"></g:Label>
+		</g:cell>
+		<g:cell>
+			<g:Label>プロジェクト：</g:Label>
+		</g:cell>
+		<g:cell>
+			<g:ListBox ui:field="projectListBox"></g:ListBox>
+		</g:cell>
+		<g:cell>
+			<g:Label>期日:</g:Label>
+		</g:cell>
+		<g:cell>
+			<d:DateBox ui:field="dueDateBox"></d:DateBox>
+		</g:cell>
+		<g:cell>
+			<g:Label>タグ：</g:Label>
+		</g:cell>
+		<g:cell>
+			<g:ScrollPanel ui:field="scrollPanel" width="200px"
+				height="100px">
+			</g:ScrollPanel>
+		</g:cell>
+		<g:cell>
+			<g:HorizontalPanel>
+                <g:cell>
+                    <g:Button ui:field="okButton">OK</g:Button>
+                </g:cell>
+				<g:cell>
+					<g:Button ui:field="cancelButton">キャンセル</g:Button>
+				</g:cell>
+			</g:HorizontalPanel>
+		</g:cell>
+	</g:VerticalPanel>
+</ui:UiBinder> 

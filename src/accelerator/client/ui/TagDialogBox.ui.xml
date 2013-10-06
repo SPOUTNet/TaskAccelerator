@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+        .error {
+            font-weight: bold;
+            color: #FF0000;
+        }
+	</ui:style>
+    <g:VerticalPanel ui:field="rootVerticalPanel">
+        <g:cell>
+            <g:Label>タグ名：</g:Label>
+        </g:cell>
+        <g:cell>
+            <g:TextBox ui:field="nameTextBox"></g:TextBox>
+        </g:cell>
+        <g:cell>
+          <g:Label ui:field="nameErrorLabel" styleName="{style.error}"></g:Label>
+        </g:cell>
+        <g:cell>
+            <g:HorizontalPanel>
+                <g:cell>
+                    <g:Button ui:field="okButton">OK</g:Button>
+                </g:cell>
+                <g:cell>
+                    <g:Button ui:field="cancelButton">キャンセル</g:Button>
+                </g:cell>
+            </g:HorizontalPanel>
+        </g:cell>
+    </g:VerticalPanel>
+</ui:UiBinder> 
